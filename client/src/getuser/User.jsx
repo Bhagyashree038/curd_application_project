@@ -9,7 +9,7 @@ const User = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://curd-application-project.onrender.com");
+        const response = await axios.get("https://curd-application-project.onrender.com/api/user");
         setUsers(response.data);
       } catch (error) {
         console.log("Error while fetching data", error);
@@ -20,7 +20,7 @@ const User = () => {
 
   const deleteUser = async (userId) => {
     await axios
-      .delete(`http://localhost:8000/api/delete/user/${userId}`)
+      .delete(`https://curd-application-project.onrender.com/api/user${userId}`)
       .then((response) => {
         setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
         toast.success(response.data.message, { position: "top-right" });
