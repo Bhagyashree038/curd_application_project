@@ -23,7 +23,7 @@ const UpdateUser = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/user/${id}`)
+      .get(`https://curd-application-project.onrender.com${id}`)
       .then((response) => {
         setUser(response.data);
       })
@@ -35,7 +35,7 @@ const UpdateUser = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .put(`http://localhost:8000/api/update/user/${id}`, user)
+      .put(`https://curd-application-project.onrender.com${id}`, user)
       .then((response) => {
         toast.success(response.data.message, { position: "top-right" });
         navigate("/");
