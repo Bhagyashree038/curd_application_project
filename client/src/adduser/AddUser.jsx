@@ -23,7 +23,7 @@ const AddUser = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .post("https://curd-application-project.onrender.com", user)
+      .post("https://curd-application-project.onrender.com/api/user", user)
       .then((response) => {
         toast.success(response.data.message, { position: "top-right" });
         navigate("/");
