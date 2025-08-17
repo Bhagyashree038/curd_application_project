@@ -23,7 +23,7 @@ const UpdateUser = () => {
 
   useEffect(() => {
     axios
-      .get(`https://curd-application-project.onrender.com/api/user${id}`)
+      .get(`https://curd-application-project.onrender.com/api/user/${id}`)
       .then((response) => {
         setUser(response.data);
       })
@@ -35,7 +35,7 @@ const UpdateUser = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .put(`https://curd-application-project.onrender.com/api/user${id}`, user)
+      .put(`https://curd-application-project.onrender.com/api/user/${id}`, user)
       .then((response) => {
         toast.success(response.data.message, { position: "top-right" });
         navigate("/");
