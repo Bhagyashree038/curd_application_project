@@ -1,0 +1,87 @@
+.userTable {
+  width: 70%;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.151);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Table */
+.userTable table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.userTable table thead th {
+  background: linear-gradient(45deg, #2b2f36, #1e2126);
+  color: #00d0ff;
+  padding: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.userTable table tbody td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #dddddd3f;
+  color: #333;
+}
+
+.userTable table tbody tr:hover {
+  background-color: rgba(0, 208, 255, 0.05);
+  transition: background 0.3s ease;
+}
+
+/* Action Buttons */
+.actionButtons button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actionButtons .edit-btn {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.actionButtons .delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.actionButtons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add User Button */
+.add-user-btn {
+  background: linear-gradient(45deg, #00bcd4, #0097a7);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-user-btn:hover {
+  background: linear-gradient(45deg, #0097a7, #00bcd4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

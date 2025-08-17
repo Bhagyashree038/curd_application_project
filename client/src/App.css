@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(147, 169, 189);
+  background-image: url(black-background-with-keypad-keys-top-black-background_270292-1168.avif);
+  background-repeat: no-repeat;
+  background-size: cover; /* scales to fill the screen */
+  background-position: center; /* centers the image */
+  background-attachment: fixed; /* optional: makes it stay still on scroll */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
